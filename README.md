@@ -6,6 +6,7 @@ Natália -> Todas as linhas
 Ellie ---> Todas as linhas
 
 E também algum texto do inicio da história
+Eva e Karen
 
 In this translation we have
 All Journal: Relationship
@@ -15,3 +16,4 @@ Natália -> all lines
 Ellie --->all lines
  
 and also some text from the beginning of the story
+Eva and Karen
