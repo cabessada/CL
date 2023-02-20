@@ -5,7 +5,8 @@ Mia -----> Todas as linhas:
 Natália -> Todas as linhas:
 Ellie ---> Todas as linhas:
 E também algum texto do inicio da história Eva e Karen:
-:
+
+
 In this translation we have:
 All Journal: Relationship:
 All menus:
