@@ -960,12 +960,12 @@ window.formatUSD = function (currency) {
 &lt;&lt;set $time to 5&gt;&gt;
 &lt;&lt;set $home to &quot;Rented Small Apartment&quot;&gt;&gt;
 &lt;&lt;set $money to 5000&gt;&gt;
-&lt;&lt;set $energy to 50&gt;&gt;
+&lt;&lt;set $energy to 100&gt;&gt;
 &lt;&lt;set $corporank to 0&gt;&gt;
 &lt;&lt;set $skipworking to &quot;not active&quot;&gt;&gt;
 &lt;&lt;set $skipdaycount to 0&gt;&gt;
 &lt;&lt;set $haveownoffice to 0&gt;&gt;
-&lt;&lt;set $lust to 50&gt;&gt;
+&lt;&lt;set $lust to 0&gt;&gt;
 &lt;&lt;set $prestige to 0&gt;&gt;
 &lt;&lt;set $sexcount to 0&gt;&gt;
 &lt;&lt;set $wife to &quot;None&quot;&gt;&gt;
@@ -1120,7 +1120,7 @@ window.formatUSD = function (currency) {
 Acabei de ser aceite no "Chase-Bank", um dos bancos mais prestigiados da cidade de Nova York.
 &lt;img src=&quot;img/banklogo.jpg&quot; style=&quot;max-width: 80%;&quot;&gt;
 
-Depois de me formar em Stanford, me inscrevi no programa Estagiário de Gestão e aluguei um pequeno apartamento perto do meu escritório e estou vivendo frugalmente para viver nesta selva simento e tijolos.
+Depois de me formar em Stanford, me inscrevi no programa Estagiário de Gestão e aluguei um pequeno apartamento perto do meu escritório e estou vivendo frugalmente para viver nesta selva de cimento e tijolos.
 
 Esta jornada é para minha sobrevivência, ou eu sobrevivo ou sucumbirei à depressão
 
@@ -2573,7 +2573,7 @@ Eu bebi uma xícara de Capuccino ( +20Energy)
 
 [[Voltar|Office]] 
 &lt;&lt;else&gt;&gt;
-Miss Eva Lovia, Chefe da Divisão de Gestão e Finanças
+Senhorita Eva Lovia, Chefe da Divisão de Gestão e Finanças
 Relacionamento: &lt;meter @value=&quot;$releva&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;&lt;/meter&gt;
 
 &lt;img src=&quot;img/char/eva_office_2.jpg&quot; style=&quot;max-width: 60%;&quot;&gt;
@@ -3652,15 +3652,15 @@ Mia became more opened to me after i was promoted as Manager in this Bank. Are a
 &lt;&lt;set $corporank +=3&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 &lt;&lt;if $corporank &lt;700&gt;&gt;
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname i heard bad reports on some branches. I want you to do some investigations on it&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname ouvi relatórios ruins sobre alguns devedores. Eu quero que você faça algumas investigações sobre isso &lt;&lt;/speech&gt;&gt;
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;video/&quot;+either(&quot;eva_discuss_work&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; Will do as soon as possible Mrs Lovia&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Farei o mais rápido possível Sra. Lovia&lt;&lt;/speech&gt;&gt;
 &lt;&lt;else&gt;&gt;
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname I found some difficulties on maintaning certain regions that has high NPL.&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname Encontrei algumas dificuldades em manter certas regiões com alto NPL ou seja "Créditos não produtivos...&lt;&lt;/speech&gt;&gt;
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;video/&quot;+either(&quot;eva_discuss_work&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; You should do vintage and cohort analysis Eva. Group the borrowers by the year they were booked. It might be not a region issue, but more like seasonal issue.&lt;&lt;/speech&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Você deve fazer análise de safra e coorte Eva. Agrupe os mutuários pelo ano em que foram registrados. Pode não ser um problema regional, mas sim um problema sazonal.&lt;&lt;/speech&gt;&gt;&lt;&lt;/if&gt;&gt;
 (Relacionamento +5)
 
 [[Voltar|Div Head Office]] </tw-passagedata><tw-passagedata pid="82" name="Casual Talk Eva" tags="" position="3657,845" size="100,100">&lt;&lt;nobr&gt;&gt;
@@ -3712,10 +3712,10 @@ Mia became more opened to me after i was promoted as Manager in this Bank. Are a
 &lt;&lt;if $lifestyle_level &gt;6&gt;&gt;
 &lt;&lt;set $releva +=7&gt;&gt;&lt;&lt;if $releva lt 0&gt;&gt;&lt;&lt;set $releva to 0&gt;&gt;&lt;&lt;elseif $releva gt 100&gt;&gt;&lt;&lt;set $releva to 100&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; You&#39;re doing well lately.. keep up the good work&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Você está indo muito bem ultimamente.. continue com o bom trabalho &lt;&lt;/speech&gt;&gt;
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;video/&quot;+either(&quot;eva_office_1&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; Will do as soon as possible Mrs Lovia&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Faço o melhor que posso e assim pertendo continuar Sra. Lovia&lt;&lt;/speech&gt;&gt;
 
 (Relacionamento +4 por interação)
 &lt;&lt;if $prestige_level is 1&gt;&gt;(Relacionamento +1 por prestigio)
@@ -3786,9 +3786,9 @@ Mia became more opened to me after i was promoted as Manager in this Bank. Are a
 
 
 &lt;&lt;/nobr&gt;&gt;
-Mrs. Lovia calls me to her office. I wonder what&#39;s this about
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname i noticed you are looking at my ass all day &lt;&lt;/speech&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; I don&#39;t know what you&#39;re talking about Mrs Lovia&lt;&lt;/speech&gt;&gt;
+A Sra. Lovia me confronta com uma situaçao bastante constrangedora
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname eu notei que você está olhando para minha bunda a todo o tempo &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Eu não sei do que você está falando Senhorita Lovia&lt;&lt;/speech&gt;&gt;
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;video/&quot;+either(&quot;eva_office_flirt&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
 
@@ -4162,14 +4162,14 @@ Change Position
 &lt;&lt;speech &quot;Mia&quot;&gt;&gt; Yess Yess Yess... Shoot all your loads inside my cunt! impregnate me! i want all of your offsprings! &lt;&lt;/speech&gt;&gt;
 
 [[Terminar transa|Office]]</tw-passagedata><tw-passagedata pid="109" name="Ask for My Own Office Room" tags="" position="4554,280" size="100,100">&lt;&lt;set $time +=1&gt;&gt; &lt;&lt;set $haveownoffice to 1&gt;&gt; &lt;&lt;set $prestige +=30&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt;Miss Lovia i&#39;d like to have own office room &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt;Senhorita Lovia, eu gostaria de ter meu próprio escritório &lt;&lt;/speech&gt;&gt;
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;video/&quot;+either(&quot;eva_office_1&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt;Fine, i&#39;ll arrange it with the General Affairs. Congrats for your promotion by the way $firstname &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt;Tudo bem, vou providênciar isso com os Assuntos Gerais. Parabéns pela sua promoção a propósito Nome &lt;&lt;/speech&gt;&gt;
 
-I am now responsible of my own team.. it&#39;s the first step to establish my influence and power in this company
+Agora sou responsável por minha própria equipe.. é o primeiro passo para estabelecer minha influência e poder nesta empresa
 
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; Thank you Mrs. Lovia.. i promise i will prove to you that your decision to promote me is the best decision Mam &lt;&lt;/speech&gt;&gt;
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Good.. I know i can count on you.. The fund will be ready on Monday&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Obrigado Sra. Lovia .. eu prometo que vou provar a você que sua decisão em me promover forão decisão. &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Muito bem... Sei que posso contar com você.. o fundo estará pronto na segunda-feira, mas você pode ir arrumar o escritório a seu gosto desde já. Àh e não se esqueça de contratar assistentes... Vai precisar. &lt;&lt;/speech&gt;&gt;
 
 [[Proceguir|Office]] </tw-passagedata><tw-passagedata pid="110" name="Redlight District" tags="" position="5597,2554" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $lust +=1&gt;&gt;&lt;&lt;if $lust lt 0&gt;&gt;&lt;&lt;set $lust to 0&gt;&gt;&lt;&lt;elseif $lust gt 100&gt;&gt;&lt;&lt;set $lust to 100&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -4544,24 +4544,24 @@ I am now responsible of my own team.. it&#39;s the first step to establish my in
 
 She giggles after i said that
 
-[[Ir para casa|Streets]]</tw-passagedata><tw-passagedata pid="136" name="Go to Office" tags="" position="4556,389" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="137" name="Eva Date" tags="" position="3653,963" size="100,100">I asked Eva for a date
+[[Ir para casa|Streets]]</tw-passagedata><tw-passagedata pid="136" name="Go to Office" tags="" position="4556,389" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="137" name="Eva Date" tags="" position="3653,963" size="100,100">Eu convidei Eva para um encontro
 
 &lt;img src=&quot;img/char/eva_office_1.jpg&quot; style=&quot;max-width: 100%;&quot;&gt;
 &lt;&lt;if $evastatus is &quot;Direct Supervisor&quot;&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; Ehmm Mrs Lovia, i wonder if you&#39;re free tonight? i would love to ask you for a drink.. My treat!&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Ehmm Sra Lovia, eu me pergunto se você está livre esta noite? Gostaria de saber se você me da a onrra de sua companhia em um rolê.&lt;&lt;/speech&gt;&gt;
 
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; haha Of Course $firstname, you&#39;ve got guts for asking your boss on a date *KKK* &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; $firstname, você tem coragem de convidar seu chefe para sair?! *KKK* &lt;&lt;/speech&gt;&gt;
 
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; No no no.. it&#39;s not a date.. it&#39;s just a celebration Mrs Lovia &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Não não não .. não é um encontro .. é só uma comemoração Senhorita Lovia &lt;&lt;/speech&gt;&gt;
 
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; You&#39;re cute when you&#39;re blushing $firstname &lt;&lt;/speech&gt;&gt; &lt;&lt;/if&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Você é fofo quando fica corado $firstname &lt;&lt;/speech&gt;&gt; &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $evastatus is &quot;girlfriend&quot;&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; Babe, wanna go for a date? &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Querida, quer ir a um encontro? &lt;&lt;/speech&gt;&gt;
 
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Sure, where do you wanna go babe? &lt;&lt;/speech&gt;&gt; &lt;&lt;/if&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Claro amor, você escolhe o sitio? &lt;&lt;/speech&gt;&gt; &lt;&lt;/if&gt;&gt;
 
-[[Restaurante|Dinner Eva]]  [[Bar|Bar Eva]]  [[Para casa dela|House Eva]]</tw-passagedata><tw-passagedata pid="138" name="Dinner Eva" tags="" position="3767,969" size="100,100">&lt;&lt;if $money &lt;301&gt;&gt; &lt;&lt;speech &quot;Você&quot;&gt;&gt;Eu não tenho dinheiro suficiente&lt;&lt;/speech&gt;&gt;
+[[Bar exótico|Dinner Eva]]  [[Bar|Bar Eva]]  [[Para casa dela|House Eva]]</tw-passagedata><tw-passagedata pid="138" name="Dinner Eva" tags="" position="3767,969" size="100,100">&lt;&lt;if $money &lt;301&gt;&gt; &lt;&lt;speech &quot;Você&quot;&gt;&gt;Eu não tenho dinheiro suficiente&lt;&lt;/speech&gt;&gt;
 &lt;&lt;set $releva +=2&gt;&gt;&lt;&lt;if $releva lt 0&gt;&gt;&lt;&lt;set $releva to 0&gt;&gt;&lt;&lt;elseif $releva gt 100&gt;&gt;&lt;&lt;set $releva to 100&gt;&gt;&lt;&lt;/if&gt;&gt; [[Cancelar|Home]] &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -4572,15 +4572,15 @@ She giggles after i said that
 &lt;&lt;set $releva +=5&gt;&gt;&lt;&lt;if $releva lt 0&gt;&gt;&lt;&lt;set $releva to 0&gt;&gt;&lt;&lt;elseif $releva gt 100&gt;&gt;&lt;&lt;set $releva to 100&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-&lt;&lt;if $money &gt;300&gt;&gt;I take Eva to an expensive Restaurant in the city
+&lt;&lt;if $money &gt;300&gt;&gt;Eu levo Eva para um sitio diferente e exótico
 
 &lt;img src=&quot;img/char/eva_restaurant.jpg&quot; style=&quot;max-width: 80%;&quot;&gt;
 
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; How was it Mrs Lovia? Do you like the food?&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Eva como está esse batido? O meu é damasiado doce. &lt;&lt;/speech&gt;&gt;
 
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; I love it $firstname! i really like the food &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Está muito bom $firstname! Voce tem bom gosto quem diria hehe &lt;&lt;/speech&gt;&gt;
 
-[[Take Her Home|House Eva]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="139" name="Bar Eva" tags="" position="3879,971" size="100,100">&lt;&lt;if $money &lt;101&gt;&gt; &lt;&lt;speech &quot;Você&quot;&gt;&gt;Eu não tenho dinheiro suficiente&lt;&lt;/speech&gt;&gt;
+[[Levar Eva a casa|House Eva]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="139" name="Bar Eva" tags="" position="3879,971" size="100,100">&lt;&lt;if $money &lt;101&gt;&gt; &lt;&lt;speech &quot;Você&quot;&gt;&gt;Eu não tenho dinheiro suficiente&lt;&lt;/speech&gt;&gt;
 &lt;&lt;set $releva +=5&gt;&gt;&lt;&lt;if $releva lt 0&gt;&gt;&lt;&lt;set $releva to 0&gt;&gt;&lt;&lt;elseif $releva gt 100&gt;&gt;&lt;&lt;set $releva to 100&gt;&gt;&lt;&lt;/if&gt;&gt; [[Cancelar|Home]] &lt;&lt;/if&gt;&gt;
 
 &lt;&lt;nobr&gt;&gt;
@@ -4607,13 +4607,13 @@ She giggles after i said that
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;video/&quot;+either(&quot;enter_eva_house&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
 &lt;&lt;if $evafucked is 0&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt;I take Mrs Lovia Home, She was happy earlier.. but she&#39;s now look a little gloomy &lt;&lt;/speech&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;speech &quot;Você&quot;&gt;&gt;We arrive at Eva&#39;s house. Que quero fazer? now?&lt;&lt;/speech&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt;Eu trouxe Eva para casa, ela estava feliz antes... mas agora ela parece um pouco triste fiz algo de errado? Que devo fazer? &lt;&lt;/speech&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;speech &quot;Você&quot;&gt;&gt;We arrive at Eva&#39;s house. Que quero fazer? now?&lt;&lt;/speech&gt;&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if $evafucked is 1&gt;&gt;[[Transar|Eva Sex Home Start]]&lt;&lt;else&gt;&gt;[[Ask her what Happened|Eva Pre Sex Home Start]]&lt;&lt;/if&gt;&gt;  [[Ir direto para casa|Streets]]</tw-passagedata><tw-passagedata pid="141" name="Normal Escort" tags="" position="5593,2658" size="100,100">&lt;img src=&quot;img/place/brothel_lobby.webp&quot; style=&quot;max-width: 80%;&quot;&gt;
+&lt;&lt;if $evafucked is 1&gt;&gt;[[Transar|Eva Sex Home Start]]&lt;&lt;else&gt;&gt;[[Perguntar o que se passa|Eva Pre Sex Home Start]]&lt;&lt;/if&gt;&gt;  [[Ir direto para casa|Streets]]</tw-passagedata><tw-passagedata pid="141" name="Normal Escort" tags="" position="5593,2658" size="100,100">&lt;img src=&quot;img/place/brothel_lobby.webp&quot; style=&quot;max-width: 80%;&quot;&gt;
 
-&lt;&lt;speech &quot;Bordel&quot;&gt;&gt; Hey, Welcome to my brothel. We only offer you the best of the best sex artists&lt;&lt;/speech&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; Wow, they&#39;re all beautiful and sexy&lt;&lt;/speech&gt;&gt;
-&lt;&lt;speech &quot;Bordel&quot;&gt;&gt; Not only that, they are Sex Experts.. Come.. just take a look at our available escorts&lt;&lt;/speech&gt;&gt; 
+&lt;&lt;speech &quot;Bordel&quot;&gt;&gt; Ei, bem-vindo ao meu bordel. Oferecemos apenas o melhor dos melhores acompanhantes.&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; Uau, elas são todas lindas e sensuais&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Bordel&quot;&gt;&gt; E não só, temos acompanhantes para todos os gostos e necessidades.. Venha.. Dê uma olhada em nossas acompanhantes disponíveis&lt;&lt;/speech&gt;&gt; 
 
 
 &lt;&lt;nobr&gt;&gt;
@@ -5322,17 +5322,17 @@ Mesmerized by her beauty I just walk toward her, without do much talking
 &lt;&lt;set $location_eva to &quot;home&quot; &gt;&gt;
 &lt;&lt;set $guest +=1&gt;&gt;
 
-[[Hang up|Home]]</tw-passagedata><tw-passagedata pid="192" name="Eva Pre Sex Home Start" tags="" position="4106,968" size="100,100">&lt;&lt;speech &quot;Você&quot;&gt;&gt; What happened Eva? is there something bothering you?&lt;&lt;/speech&gt;&gt;
+[[Hang up|Home]]</tw-passagedata><tw-passagedata pid="192" name="Eva Pre Sex Home Start" tags="" position="4106,968" size="100,100">&lt;&lt;speech &quot;Você&quot;&gt;&gt; O que aconteceu Eva? tem algo te incomodando? Fiz ou disse alguma coisa que não deveria?&lt;&lt;/speech&gt;&gt;
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;sexvid/home_sex_eva/&quot;+either(&quot;pre_start&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
 
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; No.. No.. It&#39;s not that $firstname.. i&#39;m just... &lt;&lt;/speech&gt;&gt;
-&lt;&lt;speech &quot;Você&quot;&gt;&gt; What happened? you can just tell me anything &lt;&lt;/speech&gt;&gt;
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; The truth is.. i want you to spend the night here with me.. i need you $firstname &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Não.. não.. Não é nada disso $firstname.. eu apenas estou... &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt; O que aconteceu? pode contar, você pode confiar em mim &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; A verdade é que eu quero que você passe a noite aqui comigo eu preciso de você $firstname &lt;&lt;/speech&gt;&gt;
 
-Damn.. what should i do now?
+Porra ... Do nada... O que devo fazer agora?
 
-[[Transar|Eva Sex Home Start]]  [[Ignore her and go home|Ignore Eva&#39;s advance]]</tw-passagedata><tw-passagedata pid="193" name="Eva Sex Home Start" tags="" position="4328,968" size="100,100">&lt;&lt;nobr&gt;&gt;
+[[Aceitar|Eva Sex Home Start]]  [[Vá para casa|Ignore Eva&#39;s advance]]</tw-passagedata><tw-passagedata pid="193" name="Eva Sex Home Start" tags="" position="4328,968" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $lust +=2&gt;&gt;&lt;&lt;if $lust lt 0&gt;&gt;&lt;&lt;set $lust to 0&gt;&gt;&lt;&lt;elseif $lust gt 100&gt;&gt;&lt;&lt;set $lust to 100&gt;&gt;&lt;&lt;/if&gt;&gt;
 ​
 &lt;&lt;set $time +=1&gt;&gt;&lt;&lt;if $time lt 0&gt;&gt;&lt;&lt;set $time to 0&gt;&gt;&lt;&lt;elseif $time gt 24&gt;&gt;&lt;&lt;set $time to 24&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -5340,15 +5340,15 @@ Damn.. what should i do now?
 &lt;&lt;set $releva +=2&gt;&gt;&lt;&lt;if $releva lt 0&gt;&gt;&lt;&lt;set $releva to 0&gt;&gt;&lt;&lt;elseif $releva gt 100&gt;&gt;&lt;&lt;set $releva to 100&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
-&lt;&lt;speech &quot;Eva&quot;&gt;&gt; I really want you $firstname &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Eva&quot;&gt;&gt; Eu realmente quero muito você $firstname &lt;&lt;/speech&gt;&gt;
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;sexvid/home_sex_eva/&quot;+either(&quot;start&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
 
-&lt;&lt;speech &quot;Você&quot;&gt;&gt;I also want you Eva&lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt;Eu também quero você Eva&lt;&lt;/speech&gt;&gt;
 &lt;video controls autoplay loop&gt;&lt;source
 @src=&#39;&quot;sexvid/home_sex_eva/&quot;+either(&quot;pre_foreplay&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
 
-we start to lustfully and passionately kiss each other.. it was an urge that has been buried deep inside, and now explodes
+Começamos a nos beijar com tezão e paixão .. Era um desejo que estava bem cá fundo
 
 [[Fuck Her Now|Eva Sex foreplay]]</tw-passagedata><tw-passagedata pid="194" name="Ignore Eva&#39;s advance" tags="" position="4218,969" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $lust +=1&gt;&gt;&lt;&lt;if $lust lt 0&gt;&gt;&lt;&lt;set $lust to 0&gt;&gt;&lt;&lt;elseif $lust gt 100&gt;&gt;&lt;&lt;set $lust to 100&gt;&gt;&lt;&lt;/if&gt;&gt;
@@ -5360,7 +5360,7 @@ we start to lustfully and passionately kiss each other.. it was an urge that has
 
 &lt;video controls autoplay loop&gt;&lt;source @src=&#39;&quot;sexvid/home_sex_eva/&quot;+either(&quot;reject_eva&quot;)+&quot;.mp4&quot;&#39; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;
 
-&lt;&lt;speech &quot;Você&quot;&gt;&gt;Sorry Mrs Lovia, i can&#39;t do this.. you&#39;re my boss.. it&#39;s wrong &lt;&lt;/speech&gt;&gt;
+&lt;&lt;speech &quot;Você&quot;&gt;&gt;Desculpe senhora Lovia, eu não posso fazer isso .. você é minha chefe .. está errado&lt;&lt;/speech&gt;&gt;
 
 [[Ir direto para casa|Streets]]</tw-passagedata><tw-passagedata pid="195" name="Eva Sex foreplay" tags="" position="4439,968" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $lust +=15&gt;&gt;&lt;&lt;if $lust lt 0&gt;&gt;&lt;&lt;set $lust to 0&gt;&gt;&lt;&lt;elseif $lust gt 100&gt;&gt;&lt;&lt;set $lust to 100&gt;&gt;&lt;&lt;/if&gt;&gt;
