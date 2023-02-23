@@ -7,7 +7,7 @@ Ellie ---> Todas as linhas,
 E também algum texto do inicio da história Eva e Karen
 Aviso 
 Usar saves feitos na versão em ingles causa incompatibilidades com a versao em portugues ...
-/n
+<br />
 In this translation we have:
 All Journal: Relationship
 All menus and 
