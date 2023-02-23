@@ -1,3 +1,5 @@
+0.0.7<br />
+<br />
 Esta traduçao contém:<br />
 Todo o jornal de relaçoes<br />
 Todos os ménus e <br />
